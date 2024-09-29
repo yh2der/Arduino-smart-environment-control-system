@@ -38,22 +38,35 @@ This project implements an intelligent environment control system using Arduino,
 4. Install the APK on your Android device.
 
 ## Usage Instructions
-1. Run the mobile app on your Android device.
-2. Connect to the Arduino system via Bluetooth using the app.
-3. Use the app interface to:
-   - Switch between manual and automatic modes
-   - Control individual lights and the heating mat in manual mode
-   - Monitor temperature, humidity, and light intensity
-   - View the current status of all devices
 
-### Manual Mode
-- Use the app to send commands for controlling individual lights and the heating mat.
-- Option to turn on all lights and the heating mat simultaneously.
+### Connecting to the System
+1. Open the mobile application.
+2. Click the button next to "Bluetooth Connection Status" to scan for Bluetooth devices.
+3. Select the appropriate Bluetooth device from the list to connect.
 
-### Automatic Mode
-- The system will adjust lighting and heating based on environmental conditions:
-  - Lights adjust based on temperature and detected presence.
-  - Heating mat activates when light intensity is low.
+### Switching Between Auto/Manual Modes
+- On the main app interface, choose "Auto" or "Manual" to switch control modes.
+
+### Operating in Automatic Mode
+In automatic mode, the system adjusts based on environmental conditions:
+- Heating devices turn on automatically when temperature falls below set value.
+- Lights activate when light intensity is low.
+- Relevant lights turn on when presence is detected nearby.
+
+### Operating in Manual Mode
+In manual mode, you can:
+1. Use sliders to control the brightness of each heating lamp (Heating Lamps 1-4).
+2. Use toggle switches to control the on/off status of the heating mat.
+3. Click the "On/Off" button to control all devices simultaneously.
+
+### Data Display
+- The main app interface displays real-time temperature and humidity data.
+- You can view the current status (on/off) of each device.
+
+### Special Features
+- Automated control allows for environment management based on predefined conditions.
+- Manual control offers fine-tuned adjustment for each device.
+- Bluetooth connection ensures stable remote control.
 
 ## Code Structure
 ### Arduino Code
@@ -70,6 +83,14 @@ This project implements an intelligent environment control system using Arduino,
 
 ## Testing
 After installation, run the app on your Android device and test all functionalities as needed.
+
+## Troubleshooting
+1. If Bluetooth connection fails, ensure:
+   - The Arduino system is powered on
+   - The Bluetooth module is correctly connected and configured
+   - Your phone's Bluetooth is turned on
+2. If data display is abnormal, check if sensors are correctly connected.
+3. If lights or heating mat can't be controlled, check corresponding wiring and power supply.
 
 ## Contributing
 Contributions to improve the system are welcome. Please follow these steps:
