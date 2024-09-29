@@ -1,7 +1,7 @@
 # Arduino Smart Environment Control System
 
 ## Project Overview
-This project implements an intelligent environment control system using Arduino, with a companion mobile app created using MIT App Inventor. It monitors temperature, humidity, and light intensity, and controls multiple lights and a heating mat either automatically or manually via Bluetooth.
+This project implements an intelligent environment control system using Arduino for the turtle environment (but it could be transferred to any other environment), with a companion mobile app created using MIT App Inventor. It monitors temperature, humidity, and light intensity, and controls multiple lights and a heating mat either automatically or manually via Bluetooth.
 
 ## Hardware Requirements
 - Arduino board
